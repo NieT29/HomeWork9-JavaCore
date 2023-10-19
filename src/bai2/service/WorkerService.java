@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class WorkerService {
     public void menu(Scanner scanner, ArrayList<Worker> workers) {
-        int select;
+        int select= 0;
         do {
             System.out.println("Quản lý công nhân");
             System.out.println("1.Thêm công nhân");
@@ -27,11 +27,13 @@ public class WorkerService {
                     break;
                 case 3:
                     downSalary(scanner, workers);
+                    break;
                 case 4:
                     printInfo(workers);
             }
         } while (select != 5);
     }
+
 
     public Worker addWorker(Scanner scanner) {
         System.out.println("Mời bạn nhập tên ");
