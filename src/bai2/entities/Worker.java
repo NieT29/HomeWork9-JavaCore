@@ -9,11 +9,8 @@ public class Worker {
     private String workPlace;
     private Enum STATUS;
 
-    public Worker(int id) {
-        this.id = ++autoId;
-    }
-
     public Worker(String name, int age, double salary, String workPlace) {
+        this.id = ++autoId;
         this.name = name;
         this.age = age;
         this.salary = salary;
